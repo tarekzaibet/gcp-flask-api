@@ -7,7 +7,6 @@ flask-cors
 pyyaml
 google-cloud-logging
 firebase-admin==2.13.0
-requests==2.19.1
 sendgrid==5.6.0
 google-api-python-client
 google-auth

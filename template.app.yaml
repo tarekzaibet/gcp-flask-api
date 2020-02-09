@@ -1,0 +1,23 @@
+runtime: python37
+service: api
+
+handlers:
+- url: /api/.*
+  script: auto
+
+env_variables:
+  DEBUG: No # Yes or No
+  DOMAIN: ''
+  ORGANIZATION_ID: ''
+  DEFAULT_PARENT_FOLDER_ID: ''
+  DEFAULT_APPLICATION_CODE: ''
+  DEFAULT_BUDGET_CODE: ''
+  DEFAULT_ENVIRONMENT: ''
+  PROJECT_ID_PREFIX: ''
+  BASIC_AUTH_USERNAME: ''
+  BASIC_AUTH_PASSWORD: ''
+  SENDGRID_API_KEY: ''
+  DEFAULT_FROM_EMAIL: ''
+  DEFAULT_EMAIL_SUBJECT: ''
+  BILLING_ACCOUNT_MANAGER_EMAIL: ''
+  SERVICE_ACCOUNT_EMAIL: ''
