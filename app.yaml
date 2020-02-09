@@ -1,0 +1,27 @@
+runtime: python37
+service: default
+
+handlers:
+- url: /api/.*
+  script: auto
+- url: /apidocs
+  script: auto
+
+env_variables:
+  DEBUG: No # Yes or No
+  DOMAIN:
+  ORGANIZATION_ID: ''
+  DEFAULT_PARENT_FOLDER_ID: ''
+  DEFAULT_COUNTRY: ''
+  SANDBOX_FOLDER_ID: ''
+  DEFAULT_APPLICATION_CODE: ''
+  DEFAULT_BUDGET_CODE: ''
+  DEFAULT_ENVIRONMENT: ''
+  PROJECT_ID_PREFIX: ''
+  BASIC_AUTH_USERNAME: ''
+  BASIC_AUTH_PASSWORD: ''
+  SENDGRID_API_KEY: ''
+  DEFAULT_FROM_EMAIL: ''
+  DEFAULT_EMAIL_SUBJECT: Message from Cloud Portal
+  BILLING_ACCOUNT_MANAGER_EMAIL: ''
+  SERVICE_ACCOUNT_EMAIL: ''
